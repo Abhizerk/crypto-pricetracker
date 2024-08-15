@@ -17,3 +17,6 @@
 "scripts": {
     "build": "npm run build"
 }
+"engines": {
+  "node": "14.x"
+}
