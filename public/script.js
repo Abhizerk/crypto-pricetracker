@@ -32,7 +32,16 @@ async function loadCoins() {
         loadingSpinner.innerText = 'Failed to load data';
     }
 }
-
+// Function to load news dynamically
+function loadNews() {
+    const newsList = document.getElementById('news-list');
+    news.forEach(article => {
+        const newsItem = document.createElement('div');
+        newsItem.className = 'news-item';
+        newsItem.innerHTML = `<a href="${article.link}">${article.title}</a>`;
+        newsList.appendChild(newsItem);
+    });
+}
 // Load content on page load
 window.onload = function() {
     loadCoins();
