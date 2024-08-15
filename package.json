@@ -14,9 +14,4 @@
     "node-fetch": "^2.7.0"
   }
 }
-"scripts": {
-    "build": "npm run build"
-}
-"engines": {
-  "node": "14.x"
-}
+
